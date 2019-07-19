@@ -1,0 +1,25 @@
+.todo-styles {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  position: relative;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.editable-style {
+  display: flex;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.cross-image {
+  position: absolute;
+  margin-left: 230px;
+}

@@ -1,0 +1,22 @@
+.cross-image {
+  display: none;
+}
+
+.todo-item:hover .cross-image {
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+
+.strike-text {
+  color: #d9d9d9;
+  font-size: 24px;
+  text-decoration: line-through;
+}
+
+.dont-strike {
+  font-size: 24px;
+  display: flex;
+  flex: 1;
+  color: #4d4d4d;
+}

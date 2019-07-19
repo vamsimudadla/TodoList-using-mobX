@@ -1,0 +1,36 @@
+Store
+    TodoStore
+        -@observable todos
+        -@observable appliedTodo
+        -@action addNewTodo(todoText)
+        -@compute filteredTodoItems
+        -@compute remainingTodosTocompleteCount
+        -@action changeActiveButtonState
+        -@action deleteCompletedTodos
+    model
+        -Todo
+            -id
+            -@observable todosDescription
+            -@observable completed
+            -@action onToggleCheckBox
+            -@action updateTodo
+            -@action deleteTodo
+
+components
+    TodoApp
+        TodoTextBox
+            -@observable todoText
+        @observer TodoList
+            @observer TodoItem
+                -checkbox
+                -EditableTodo
+                    -todoDescription
+                    -TodoTextBox
+                -cross-icon
+        @observer FilterButtons
+            -remainingTodosTocompleteCount
+            -allButton
+            -activeButton
+            -completedButton
+            -clearCompletedButton
+

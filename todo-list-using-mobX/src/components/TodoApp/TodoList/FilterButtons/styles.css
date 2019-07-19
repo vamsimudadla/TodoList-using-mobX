@@ -1,0 +1,100 @@
+.button-block {
+  height: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remaining-todos-count {
+  position: absolute;
+  margin-left: 10px;
+  color: #777777;
+  font-size: 14px;
+}
+
+.all-button {
+  border: none;
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 150px;
+}
+
+.active-button {
+  border: none;
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 200px;
+}
+
+.completed-button {
+  border: none;
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 270px;
+}
+
+.clear-completed-button {
+  border: none;
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 380px;
+}
+
+.active-all-button {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 150px;
+}
+
+.active-active-button {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 200px;
+}
+
+.active-completed-button {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+  background-color: white;
+  color: #777777;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 270px;
+}
+
+.all-button:hover {
+  border: 2px solid rgba(175, 47, 47, 0.2);
+  cursor: pointer;
+}
+
+.completed-button:hover {
+  border: 2px solid rgba(175, 47, 47, 0.2);
+  cursor: pointer;
+}
+
+.active-button:hover {
+  border: 2px solid rgba(175, 47, 47, 0.2);
+  cursor: pointer;
+}
+
+.clear-completed-button:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #777777;
+}
