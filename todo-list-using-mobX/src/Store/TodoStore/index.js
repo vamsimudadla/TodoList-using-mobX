@@ -33,7 +33,8 @@ class TodoStore {
 
   @action.bound
   deleteTodo(todo) {
-    this.todos.splice(this.todos.indexOf(todo), 1);
+    let confirmation = window.confirm("You Want to delete");
+    if (confirmation) this.todos.splice(this.todos.indexOf(todo), 1);
   }
 
   @action.bound
